@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: #909090;
+    margin: 0;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.start-game{
+ 
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: #f3dd83;
+    text-transform: uppercase;
+    transform: scale(1);
+	animation: pulse 2s infinite; 
+}
+.game-setup{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+} 
+
+/*Buttons*/
+.btn-pink{
+    background-color: #e18d96;
+    border:none;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+.btn-purple{
+    background-color: #c8b4ba;
+    border:none;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px; 
+}
+.btn-green{
+    background-color: #c1cd97;
+    border:none;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;   
+    margin-right: 50px;
+}
+.btn-yellow{
+    background-color: #f3dd83;;
+    border:none;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;   
+}
+.press{
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+/*Animation*/
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+	
+	70% {
+		transform: scale(1);
+	}
+	
+	100% {
+		transform: scale(0.95);
+	}
+}
